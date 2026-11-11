@@ -8,7 +8,7 @@ def index():
     return render_template("index.html", titulo="Minha primeira aplicação Flask")
 
 
-@app.route("/")
+@app.route("/sobre")
 def sobre():
     return render_template("sobre.html")
 
@@ -19,3 +19,41 @@ def sobre():
 if __name__ == "__main__":
     # host=0.0.0.0 permite o encaminhamento da porta no Codespaces.
     app.run(host="0.0.0.0", port=5000, debug=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
