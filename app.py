@@ -17,6 +17,9 @@ def sobre():
 def ola(nome):
     return render_template("ola.html", nome=nome)
 
+@app.route("/idade/<int:idade>")
+def idade(idade):
+    return render_template("idade.html", idade=idade)
 
 
 
