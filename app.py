@@ -13,6 +13,13 @@ def sobre():
     return render_template("sobre.html")
 
 
+@app.route("/ola/<nome>")
+def ola(nome):
+    return render_template("ola.html", nome=nome)
+
+
+
+
 
 
 # deve ficar no final do arquivo sempre
