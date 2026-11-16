@@ -31,7 +31,7 @@ def disciplinas():
 def tabuada(n):
     return render_template("tabuada.html", n=n)
 
-@app.route("/alunos/")
+@app.route("/aluno/")
 def listar_aluno():
     alunos = aluno_service.listar()
     return render_template("alunos/listar.html", alunos=alunos)
