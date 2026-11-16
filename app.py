@@ -26,6 +26,10 @@ def disciplinas():
     lista = ["Progamação Web", "Banco de Dados", "Redes", "Inglês Técnico"]
     return render_template("disciplinas.html", disciplinas=lista)
 
+@app.route("/tabuada/<int:n>")
+def tabuada(n):
+    return render_template("tabuada.html", n=n)
+
 # deve ficar no final do arquivo sempre
 if __name__ == "__main__":
     # host=0.0.0.0 permite o encaminhamento da porta no Codespaces.
