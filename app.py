@@ -34,7 +34,7 @@ def tabuada(n):
 @app.route("/aluno/")
 def listar_aluno():
     alunos = aluno_service.listar()
-    return render_template("alunos/listar.html", alunos=alunos)
+    return render_template("aluno/listar.html", alunos=alunos)
 
 # deve ficar no final do arquivo sempre
 if __name__ == "__main__":
