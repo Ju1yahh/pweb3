@@ -10,4 +10,4 @@ lista_aluno = [
  
 
 def listar():
-    return lista_aluno
+    return lista_alunos
