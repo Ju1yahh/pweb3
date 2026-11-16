@@ -21,7 +21,10 @@ def ola(nome):
 def idade(idade):
     return render_template("idade.html", idade=idade)
 
-
+@app.route("/disciplinas")
+def disciplinas():
+    lista = ["Progamação Web", "Banco de Dados", "Redes", "Inglês Técnico"]
+    return render_template("disciplinas.html", disciplinas=lista)
 
 # deve ficar no final do arquivo sempre
 if __name__ == "__main__":
