@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import aluno_service
+import curso_service
 
 app = Flask(__name__)
 
@@ -35,6 +36,13 @@ def tabuada(n):
 def listar_aluno():
     alunos = aluno_service.listar()
     return render_template("aluno/listar.html", alunos=alunos)
+
+@app.route("/curso/")
+def listar_cursos():
+    cursos = curso_service.listar()
+    return render_template("curso/listar.html", cursos=cursos)
+
+
 
 # deve ficar no final do arquivo sempre
 if __name__ == "__main__":
