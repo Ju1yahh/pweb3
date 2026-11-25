@@ -18,3 +18,14 @@ lista_curso = [
 
 def listar():
     return lista_curso
+
+def cadastrar(nome, area):
+    if len(lista_curso) == 0:
+        novo_id = 1
+    else:
+        ultimo = lista_curso[-1]
+        novo_id = ultimo["id"] + 1
+
+    curso = {"id": novo_id, "nome": nome, "area": area}
+    lista_curso.append(curso)
+    return curso
